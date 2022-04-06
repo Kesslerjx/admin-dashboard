@@ -6,6 +6,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -27,6 +28,40 @@ header {
     grid-column: 1 / 2;
     grid-row: 1 / 6;
     background-color: var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sidebar-link {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 15px;
+    color: white;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.dashboard-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.dashboard-title {
+    font-size: 1.5rem;
+}
+
+.sidebar-svg {
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.sidebar-link > p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 main {
