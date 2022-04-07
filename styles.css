@@ -149,8 +149,53 @@ header {
 
 /* SIDEBAR CSS */
 
+/* MAIN CSS */
+
 main {
     grid-column: 2 / 6;
     grid-row: 2 / 6;
     background-color: var(--main-background);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 30px;
 }
+
+.main-content-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.main-sidebar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgb(0 0 0 / 0.2);
+}
+
+.announcement {
+    padding: 10px 0;
+}
+
+.announcement-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.announcement-text {
+    margin: 2px;
+    font-size: 0.7rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* MAIN CSS */
