@@ -161,16 +161,27 @@ main {
     gap: 30px;
 }
 
-.projects {
+.projects, .sidebar-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container {
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
-.project-container {
+.project-container, .sidebar-div > div {
+    height: 100%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgb(0 0 0 / 0.2);
+    
+}
+
+.project-container {
     border-left: 10px solid orange;
 }
 
@@ -180,9 +191,4 @@ main {
     gap: 30px;
 }
 
-.sidebar-div {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgb(0 0 0 / 0.2);
-}
 /* MAIN CSS */
